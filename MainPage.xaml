@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="Inforamtion.MainPage" BackgroundColor="#BAE2FF">
+
+    <StackLayout>
+        <Button  ImageSource="back"  Text="      CaRental" VerticalOptions="Center" FontSize="30" BackgroundColor="#BAE2FF" TextColor="#001E34" FontAttributes="Bold" Padding="10,5,100,-10" FontFamily="d " />
+
+        <Frame HasShadow="True"  BackgroundColor="white" CornerRadius="30" Margin="10,10,10,70" VerticalOptions="FillAndExpand" >
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*">
+                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Text="Booking Information" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="10,-5,-100,0"  />
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text=" ___________________________________________" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="-100,-15,-550,0"  />
+                <Button Grid.Row="3" Grid.Column="0" HeightRequest="50"   WidthRequest="500" ImageSource="calendarr" Text="   Check Available Days" TextColor="White"  CornerRadius="10" VerticalOptions="End" BackgroundColor="#001E34" HorizontalOptions="Start" Margin="30,-60,-230,-50"/>
+                <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text=" From : " VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="30,50,45,0"  />
+                <Picker Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Title="Day" TextColor="Black" TitleColor="Silver" BackgroundColor="White" Margin="50,50,80,0" >
+                    <Picker.Items>
+                        <x:String>Saturday</x:String>
+                        <x:String>Sunday</x:String>
+                        <x:String>Monday</x:String>
+                        <x:String>Tuesday</x:String>
+                        <x:String>Wednesday</x:String>
+                        <x:String>Thursday</x:String>
+                        <x:String>Friday</x:String>
+                    </Picker.Items>
+                </Picker>
+                <TimePicker Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Margin="60,10,10,0" x:Name="arrivalTimePicker" Time="4:15:26" FontSize="20" VerticalOptions="End" TextColor="Black" >
+                </TimePicker>
+                <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Text="   To    : " VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="30,-5,5,0"  />
+                <Picker Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Title="Day" TextColor="Black" TitleColor="Silver" BackgroundColor="White" Margin="50,0,80,0" >
+                    <Picker.Items >
+                        <x:String>Saturday</x:String>
+                        <x:String>Sunday</x:String>
+                        <x:String>Monday</x:String>
+                        <x:String>Tuesday</x:String>
+                        <x:String>Wednesday</x:String>
+                        <x:String>Thursday</x:String>
+                        <x:String>Friday</x:String>
+                    </Picker.Items>
+                </Picker>
+                <TimePicker Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Margin="60,0,10,0" x:Name="arrivalTimePick" Time="4:15:26" FontSize="20" VerticalOptions="End" TextColor="Black">
+                </TimePicker>
+                <Label Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" Text=" ____________________________________________________" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#BAE2FF" FontAttributes="Bold" Padding="-100,-25,-50,0"  />
+
+                <Label Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3" Text="Card Information" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="10,5,-100,-5"  />
+                <Label Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" Text=" ___________________________________________" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="-100,-20,-550,10"  />
+                <Label Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="3" Text="Card Holder Name" VerticalOptions="CenterAndExpand" FontSize="20" TextColor="#001E34" FontAttributes="Bold" Padding="10,-5,-100,10"  />
+                <Entry Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black" Keyboard="Default" Placeholder="Jouhn Wick" ReturnType="Next" VerticalTextAlignment="End" BackgroundColor="White"  PlaceholderColor="Silver" Margin="10,-10,-140,0"/>
+                <Label Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="3" Text="Credit Card Number" VerticalOptions="CenterAndExpand" FontSize="20" TextColor="#001E34" FontAttributes="Bold" Padding="10,-5,-100,0"  />
+                <Entry Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black" Keyboard="Numeric" Placeholder="0000 0000 0000 0000 " ReturnType="Next" VerticalTextAlignment="End" BackgroundColor="White"  PlaceholderColor="Silver" Margin="10,-10,-140,0"/>
+                <Label Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="3" Text="Exp Date" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="10,-5,-10,0"  />
+                <Picker Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="3" Title="MM" TextColor="Black" VerticalTextAlignment="End" BackgroundColor="White"  Margin="10,-10,120,0" >
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="3" Title="YY" TextColor="Black" VerticalTextAlignment="End" BackgroundColor="White"  Margin="10,-10,120,0" >
+                    <Picker.Items>
+                        <x:String>2022</x:String>
+                        <x:String>2023</x:String>
+                        <x:String>2024</x:String>
+                        <x:String>2025</x:String>
+                        <x:String>2026</x:String>
+                        <x:String>2027</x:String>
+                        <x:String>2028</x:String>
+                        <x:String>2029</x:String>
+                        <x:String>2030</x:String>
+                        <x:String>2031</x:String>
+                        <x:String>2032</x:String>
+                        <x:String>2033</x:String>
+                        <x:String>2034</x:String>
+                        <x:String>2035</x:String>
+                        <x:String>2036</x:String>
+                        <x:String>2037</x:String>
+                        <x:String>2038</x:String>
+                        <x:String>2039</x:String>
+                        <x:String>2040</x:String>
+                    </Picker.Items>
+                </Picker> <Label Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="3" Text="CVV" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="#001E34" FontAttributes="Bold" Padding="100,-5,-100,0"  />
+                <Entry Grid.Row="15" Grid.Column="2" Grid.ColumnSpan="3" TextColor="Black" Keyboard="Numeric" Placeholder="999" ReturnType="Next" VerticalTextAlignment="End" BackgroundColor="White"  PlaceholderColor="Silver" Margin="100,-10,40,0" />
+                
+                <Button   Grid.Row="16" Grid.Column="1" HeightRequest="50"   WidthRequest="500" Text="Submit" TextColor="White" Background="#001E34"  CornerRadius="10" VerticalOptions="End" HorizontalOptions="Start" Margin="-60,5,-200,10- "/>
+            </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>
